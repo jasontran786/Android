@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Hello World!"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="33dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/taco1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/taco1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="33px"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/x"
+                    android:layout_width="200px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/back"
+                    android:paddingHorizontal="20px"
+                    android:text="Size" />
+
+                <TextView
+                    android:id="@+id/y"
+                    android:layout_width="200px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:background="@drawable/back"
+                    android:paddingHorizontal="20px"
+                    android:text="Tortilla" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginLeft="50dp">
+
+                    <RadioButton
+                        android:id="@+id/large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Large" />
+
+                    <RadioButton
+                        android:id="@+id/medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Medium" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/tortilla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginLeft="100dp">
+
+                    <RadioButton
+                        android:id="@+id/corn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Corn" />
+
+                    <RadioButton
+                        android:id="@+id/flour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Flour" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20px">
+
+                <TextView
+                    android:id="@+id/z"
+                    android:layout_width="286dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/back"
+                    android:gravity="center"
+                    android:paddingHorizontal="20px"
+                    android:text="Fillings" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ff1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingRight="50dp">
+
+                    <CheckBox
+                        android:id="@+id/f1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Beef" />
+
+                    <CheckBox
+                        android:id="@+id/f3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chicken" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/f5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="White fish" />
+
+                    <CheckBox
+                        android:id="@+id/f7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cheese" />
+
+                    <CheckBox
+                        android:id="@+id/f9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sea food" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ff2"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/f2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rice" />
+
+                    <CheckBox
+                        android:id="@+id/f4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Beans" />
+
+                    <CheckBox
+                        android:id="@+id/f6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pico de gallo" />
+
+                    <CheckBox
+                        android:id="@+id/f8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Guacamole" />
+
+                    <CheckBox
+                        android:id="@+id/f10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="LBT" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="286dp"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:text="Beverage"
+                    tools:background="@drawable/back" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingRight="50dp">
+
+                    <CheckBox
+                        android:id="@+id/b1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Soda" />
+
+                    <CheckBox
+                        android:id="@+id/b3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cerveza" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/b2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Margarita" />
+
+                    <CheckBox
+                        android:id="@+id/b4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tequila" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="299dp"
+                    android:layout_height="wrap_content"
+                    android:text="Place your oder" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Show location"
+                    android:onClick="ShowLocation"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
